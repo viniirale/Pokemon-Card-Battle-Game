@@ -10,13 +10,11 @@ import java.util.List;
 import java.util.Optional;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import jakarta.annotation.security.RolesAllowed;
 
 @Path("/pokemon")
 public class PokemonDexController {
     @GET
     @Path("info/{id}")
-    @RolesAllowed({"User", "Admin"})
     @Produces(MediaType.APPLICATION_JSON)
     public Pokemon getPokemonDex(@PathParam("id") int id) {
         try {

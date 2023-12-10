@@ -26,18 +26,9 @@ This is a Quarkus project for a Pokemon card battle application.
 
 2. Click on "Start Battle" to start the battle.
 
-3. The result of the battle (whether Pokemon 1 or Pokemon 2 wins, or if it's a tie) will appear on the screen.
+3. The winner is determined by calculating the sum of attack, defense, and hp for each Pokemon. The Pokemon with the higher total value will be declared the winner.
 
-4. To clear the battle data, click on the "Clear Battle" button.
-
-## Contributing
-
-If you would like to contribute to this project, please follow the guidelines in [CONTRIBUTING.md](CONTRIBUTING.md).
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
+4. The result of the battle (whether Pokemon 1 or Pokemon 2 wins, or if it's a tie) will appear on the screen.
 
 ## Contributing
 
