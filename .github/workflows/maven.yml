@@ -27,6 +27,10 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
+
+    - name: Grant execute permissions to mvnw
+      run: chmod +x mvnw   
+      
     - name: Build with Maven
       run: ./mvnw clean install -Pnative -Dquarkus.native.container-build=true
 
