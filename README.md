@@ -30,6 +30,55 @@ This is a Quarkus project for a Pokemon card battle application.
 
 4. The result of the battle (whether Pokemon 1 or Pokemon 2 wins, or if it's a tie) will appear on the screen.
 
+# Unit Tests
+
+This class contains unit tests for the `Pokemon` class using Junit
+
+## Test: testNomePokemon
+
+This test verifies that the name of the `pikachu` Pokemon is correctly set to "pikachu" in English.
+
+## Test: testTipoPokemon
+
+This test verifies that the type of the `pikachu` Pokemon is correctly set to "elétrico".
+
+## Test: testBasePokemon
+
+This test verifies that the base stats of the `pikachu` Pokemon are correctly set.
+
+
+# Component Tests
+
+This class contains a set of tests for the `TesteComponentePokemon` component using Rest Assured
+
+## Test Get Pokemon Dex Endpoint
+
+This test verifies if the `/pokemon/info/{id}` endpoint returns a status code of 200 (OK).
+
+## Test Get Pokemon Dex Endpoint JSON
+
+This test verifies if the `/pokemon/info/{id}` endpoint returns a status code of 200 (OK) and the response content type is JSON.
+
+## Test Get Pokemon Dex Endpoint Not Found
+
+This test verifies if the `/pokemon/info/{id}` endpoint returns a status code of 404 (Not Found) when the provided ID is not valid.
+
+## Test Get Pokemon Dex Endpoint Not Content
+
+This test verifies if the `/pokemon/info/{id}` endpoint returns a status code of 204 (No Content) when the provided ID is 0.
+
+## Test Get Pokemon Image Endpoint
+
+This test verifies if the `/pokemon/image/{id}` endpoint returns a status code of 200 (OK).
+
+## Test Get Pokemon Image Endpoint PNG
+
+This test verifies if the `/pokemon/image/{id}` endpoint returns a status code of 200 (OK) and the response content type is PNG image.
+
+## Test Get Pokemon Image Endpoint Not Found
+
+This test verifies if the `/pokemon/image/{id}` endpoint returns a status code of 404 (Not Found) when the provided ID is not valid.
+
 ## Contributing
 
 If you would like to contribute to this project, please follow the guidelines in [CONTRIBUTING.md](CONTRIBUTING.md).
@@ -37,3 +86,4 @@ If you would like to contribute to this project, please follow the guidelines in
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
