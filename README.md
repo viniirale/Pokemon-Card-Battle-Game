@@ -1,39 +1,47 @@
-# Quarkus API Dex
+# Quarkus Project: Pokemon Card Battle
 
-This is a Quarkus-based API Dex project that provides various endpoints for managing Pokémon data.
+This is a Quarkus project for a Pokemon card battle application.
 
-## Endpoints
+## How to Execute with Quarkus Dev
 
-### PokemonDexController.java
+1. Make sure you have Java JDK 11 or higher installed on your machine.
 
-This controller handles requests related to the Pokémon Dex. It provides the following endpoints:
+2. Clone this repository to your local machine.
 
-- `GET /pokemon/info/{id}`: Retrieves details of a specific Pokémon based on its ID.
+3. Open a terminal and navigate to the project's root directory.
 
-### PokemonSpriteController.java
+4. Run the following command to start the application in development mode:
 
-This controller handles requests related to Pokémon sprites. It provides the following endpoints:
+    ```shell
+    ./mvnw quarkus:dev
+    ```
 
-- `GET /pokemon/sprite/{id}`: Retrieves the sprite image of a specific Pokémon based on its ID.
+    This will start the Quarkus development mode and automatically reload the application whenever changes are made.
 
-### PokemonMarlon.java
+5. Access the application by opening your web browser and navigating to [http://localhost:8080/pokemon/index.html](http://localhost:8080/pokemon/index.html).
 
-This controller handles requests related to Pokémon Images. It provides the following endpoints:
+## How to Play
 
-- `GET /pokemon/image/{id}`: Retrieves the image of a specific Pokémon based on its ID.
+1. Select each Pokemon in the dropdown menu.
 
-## Getting Started
+2. Click on "Start Battle" to start the battle.
 
-To run this project locally, follow these steps:
+3. The result of the battle (whether Pokemon 1 or Pokemon 2 wins, or if it's a tie) will appear on the screen.
 
-1. Clone the repository.
-2. Install the necessary dependencies.
-3. Build the project using the provided build script.
-4. Run the application using the provided run script.
+4. To clear the battle data, click on the "Clear Battle" button.
 
 ## Contributing
 
-Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+If you would like to contribute to this project, please follow the guidelines in [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+
+## Contributing
+
+If you would like to contribute to this project, please follow the guidelines in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
