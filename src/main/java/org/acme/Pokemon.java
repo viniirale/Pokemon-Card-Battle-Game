@@ -31,7 +31,7 @@ public class Pokemon {
     public Pokemon() {
     }
 
-    public Pokemon(int id, Map<String, String> name, List<String> type, String sprite, Map<String, Integer> base) {
+    public Pokemon(int id, Map<String, String> name, List<String> type , Map<String, Integer> base) {
         this.id = id;
         this.name = name;
         this.type = type;
