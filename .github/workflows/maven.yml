@@ -13,6 +13,12 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+  workflow_dispatch: # Adicione esta linha para permitir o acionamento manual
+    inputs:
+      branch:
+        description: 'Branch to build'
+        required: true
+        default: 'main'    
 
 jobs:
   build:
