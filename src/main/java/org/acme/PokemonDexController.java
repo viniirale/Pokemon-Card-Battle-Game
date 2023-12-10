@@ -32,7 +32,6 @@ public class PokemonDexController {
             Optional<Pokemon> pokemon = pokemonList.stream().filter(p -> p.getId() == id).findFirst();
 
             if (pokemon.isPresent()) {
-                System.out.println(pokemon.get().toString());
                 return pokemon.get();
             } else {
                 // Se o Pokémon não for encontrado,retorne 404

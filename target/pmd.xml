@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.55.0" timestamp="2023-12-10T03:58:25.296">
+<file name="C:\Users\Vinicius\Documents\Faculdade\CPW2\trabalho_final\src\main\java\org\acme\PokemonDexController.java">
+<violation beginline="35" endline="35" begincolumn="17" endcolumn="34" rule="SystemPrintln" ruleset="Best Practices" package="org.acme" class="PokemonDexController" method="getPokemonDex" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+</file>
+</pmd>
